@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form >
+                        <input type="email" class="input-box" 
+                        placeholder="Digite seu email" required>
+                        <input type="senha" class="input-box"
+                        placeholder="senha" required>
+                        <button type="submit" class="enviar-btn">Enviar</button>
+                        <input type="checkbox"><span>Lembre-me</span>
+                    </form>  
+                    <button type="button" class="btn" onclick="openCadastrese()">Não tem Cadastro</button>
+                    <a href="">Esqueceu a Senha</a>  
+                </div>
+                <div class="card-back">
+                    <h2>CADASTRE-SE</h2>
+                    <form >
+                        <input type="text" class="input-box" placeholder="Seu Nome" required>
+                        <input type="email" class="input-box" 
+                        placeholder="Digite seu email" required>
+                        <input type="senha" class="input-box"
+                        placeholder="senha" required>
+                        <button type="submit" class="enviar-btn">Enviar</button>
+                        <input type="checkbox"><span>Lembre-me</span>
+                    </form>  
+                    <button type="button" class="btn" onclick="openLogin()">Eu tenho uma Conta</button>
+                    <a href="">Esqueceu a Senha</a>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var car =document.getElementById("card");
+        function openCadastrese(){
+            card.style.transform = "rotateY(-180deg)"
+        }
+        function openLogin(){
+            card.style.transform = "rotateY(0deg)"
+        }
+    </script>    
+</body>
+</html>
